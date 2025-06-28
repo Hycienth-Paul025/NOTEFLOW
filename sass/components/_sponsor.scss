@@ -10,7 +10,8 @@
   &-image {
     @include respond(phone) {
       display: flex;
-       gap: 17.4rem;
+      width: 100%;
+       gap: 7.4rem;
       justify-content: center;
     }
     &-dept {

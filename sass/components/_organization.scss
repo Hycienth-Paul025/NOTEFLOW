@@ -41,6 +41,10 @@
 
     & img {
       width: 60.8rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
     }
   }
 
@@ -53,6 +57,10 @@
 
     & img {
       width: 54.4rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
     }
   }
 }

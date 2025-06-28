@@ -247,7 +247,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .heading-image .img-heading {
-    width: 100%;
+    width: 90%;
   }
 }
 .heading-trust {
@@ -321,6 +321,11 @@ body {
 .organization-image img {
   width: 60.8rem;
 }
+@media (max-width: 37.5em) {
+  .organization-image img {
+    width: 100%;
+  }
+}
 .organization-desciption {
   color: #c7f7f8;
 }
@@ -329,6 +334,11 @@ body {
 }
 .organization-contextual-image img {
   width: 54.4rem;
+}
+@media (max-width: 37.5em) {
+  .organization-contextual-image img {
+    width: 100%;
+  }
 }
 
 .sponsor {
@@ -343,7 +353,8 @@ body {
 @media (max-width: 37.5em) {
   .sponsor-image {
     display: flex;
-    gap: 17.4rem;
+    width: 100%;
+    gap: 7.4rem;
     justify-content: center;
   }
 }
@@ -470,9 +481,10 @@ body {
 }
 @media (max-width: 37.5em) {
   .header {
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 4rem;
     top: 0;
     position: fixed;
+    width: 100%;
   }
 }
 .header-logo {
@@ -518,7 +530,6 @@ body {
 @media (max-width: 37.5em) {
   .header .app {
     display: block;
-    margin-left: 50rem;
   }
 }
 @media (max-width: 37.5em) {
