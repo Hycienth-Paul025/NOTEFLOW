@@ -21,7 +21,7 @@ const modalMode = document.getElementById("modal-toggle");
 navToggle.addEventListener("click", () => {
   navCont.classList.add("show-nav");
   headNav.classList.add("blur-effect");
-});
+}); 
 
 navClose.addEventListener("click", () => {
   console.log("clicked");

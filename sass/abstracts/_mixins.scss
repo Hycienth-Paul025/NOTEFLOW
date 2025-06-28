@@ -20,7 +20,7 @@
     $color-primary-dark 0%,
     $color-primary-light 100%
   );
-} 
+}
 
 @mixin secondary-thene {
   background: linear-gradient(
@@ -41,7 +41,7 @@
 
 //MEDIA QUERY MANAGEMENT
 
-/* 
+/*  
 0 - 600PX : Mobile phone
 
 600 - 900px : Tablet portrait mode

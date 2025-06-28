@@ -23,7 +23,7 @@ you can also watch a sass file like dis
 0 - 600PX : Mobile phone
 
 600 - 900px : Tablet portrait mode
- 
+  
 900 - 1200px : Tablet Landscape mode
 
 ( 1200px - 1800px ) is where our normal styles apply
