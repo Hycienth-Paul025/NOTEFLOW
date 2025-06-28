@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noteflow</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/style.css
+    "
+    />
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favicon.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <div class="header-logo-image">
+          <span class="vector v1"></span>
+          <span class="vector v2"></span>
+          <span class="vector v3"></span>
+          <span class="vector v4"></span>
+        </div>
+
+        <h1 class="bold normal-font">Noteflow</h1>
+      </div>
+      <i class="ri-apps-2-line app"></i>
+
+      <div class="header-navigation"></div>
+      <nav class="nav">
+        <i class="ri-close-large-fill nav-close-btn"></i>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-font bold">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-font light-bold">Pricing</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link nav-font light-bold">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#testimonial" class="nav-link nav-font light-bold"
+              >Community</a
+            >
+          </li>
+        </ul>
+        <!-- </nav> -->
+
+        <div class="nav-signup">
+          <a href="" class="btn btn-primary nav-font">login</a>
+
+          <a href="#" class="btn btn-secondary normal-font" id="modal-toggle"
+            >Get Started</a
+          >
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      
+      <section class="modal" id="modal">
+        <div class="modal-content">
+          <div class="modal-content-left">
+            <h1 class="center-txt">Let Get You Signed Up</h1>
+            <p class="center-txt nav-font light-bold">
+              No charges, no fees. Get note taking in minutes!
+            </p>
+          </div>
+
+          <div class="modal-content-right">
+            <div class="modal-content-right-close">
+              <div for="close" class="close-btn">
+                <i class="ri-close-large-fill"></i>
+              </div>
+            </div>
+
+            <form action="#" class="modal-form">
+              <div class="modal-form-content small-bottom">
+                <label for="email" class="modal-label nav-font bold">
+                  Email
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  class="nav-font"
+                  id="email"
+                  placeholder="noteflow@gmail.com"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="modal-form-content">
+                <label for="password" class="modal-label nav-font bold">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  class="nav-font"
+                  id="password"
+                  placeholder="**************"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+
+            <div class="modal-agreement">
+              <div class="modal-agreement-box atom-bottom center-txt">
+                <input type="checkbox" name="agreement" id="agreement" />
+
+                <label for="agreement" class="light-bold">
+                  <span class="modal-agreement-btn"></span>
+                  I agree to all terms</label
+                >
+              </div>
+
+              <a
+                href=""
+                class="btn btn-secondary center-txt nav-font big-bottom"
+                >Get Started</a
+              >
+            </div>
+            <!--  </form> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="heading" id="heading">
+        <div class="heading-container">
+          <div class="heading-description">
+            <h1 class="large-heading small-bottom">
+              Ai-powered Notes. Organize and Summarize in Seconds
+            </h1>
+
+            <p class="heading-description normal-font light-bold bottom">
+              Let AI organize & summarize your notes, saving you time and
+              boosting productivity
+            </p>
+
+            <a href="" class="btn btn-secondary normal-font"
+              >Get Started &nbsp; &rarr;</a
+            >
+          </div>
+
+          <div class="heading-image">
+            <img src="img/Right Column.png" class="img-heading" />
+          </div>
+        </div>
+
+        <div class="heading-trust">
+          <div class="heading-trust-image">
+            <img src="img/headshot-1.png" />
+            <img src="img/headshot-2.png" />
+            <img src="img/headshot-3.png" />
+            <img src="img/headshot-4.png" />
+            <img src="img/headshot-5.png" />
+          </div>
+
+          <div class="heading-trust-text normal-font">
+            Trusted by
+            <span class="style-color bold">12,653+</span> productivity junkies
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsor">
+        <p class="normal-font center-txt">
+          organization powered by <span class="bold">Noteflow</span>
+        </p>
+
+        <div class="sponsor-image bigger-top">
+          <div class="sponsor-image-dept big-bottom">
+            <img src="img/Netflix.png" class="sponsor-1" />
+
+            <img src="img/Exxon-Mobile.png" class="sponsor-1" />
+
+            <img src="img/microsoft.png" class="sponsor-1" />
+
+            <img src="img/Vice.png" class="sponsor-1" />
+          </div>
+
+          <div class="sponsor-image-dept">
+            <img src="img/Walmart.png" class="sponsor-1" />
+
+            <img src="img/Chase.png" class="sponsor-1" />
+
+            <img src="img/VISA.png" class="sponsor-1" />
+
+            <img src="img/Amazon.png" class="sponsor-1" />
+          </div>
+        </div>
+      </section>
+
+      <section class="organization">
+        <h1 class="large-heading center-txt">
+          All The Tools You Need to
+          <sapn class="text-shadow charge">Supercharge</sapn> Your Note Taking
+        </h1>
+
+        <div class="organization-container">
+          <div class="organization-image">
+            <img src="img/Smart Organization.png" />
+          </div>
+
+          <div class="organization-description">
+            <h2 class="center-txt big-heading small-bottom">
+              smart organization
+            </h2>
+
+            <p class="light-bold normal-font">
+              Automatically categorize and tag your notes using AI-driven
+              analysis. NoteFlow intelligently identifies key topics and
+              organizes your content, making it easy to find and retrieve your
+              notes when you need them most
+            </p>
+            .
+          </div>
+        </div>
+
+        <div class="organization-container reminder">
+          <div class="organization-description">
+            <h2 class="center-txt big-heading small-bottom">
+              Contextual Reminders
+            </h2>
+
+            <p class="light-bold normal-font">
+              Stay on top of important tasks with AI-powered reminders that
+              adapt to the context of your notes. NoteFlow recognizes deadlines,
+              follow-ups, and key actions from your notes and sends timely
+              alerts to ensure nothing slips through the cracks.
+            </p>
+          </div>
+
+          <div class="organization-contextual-image">
+            <img src="img/Contextual Reminders.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h1 class="large-heading center-txt">Frequently Asked Question</h1>
+
+        <p class="center-txt normal-font light-bold top-bit">
+          The most commonly asked questions about NoteFlow.
+        </p>
+
+        <p class="center-txt normal-font light-bold">
+          Have any other questions? Chat with our expert tech team
+        </p>
+
+        <div class="about-btns top-bit big-bottom">
+          <div class="about-btns-right">
+            <a href="" class="btn btn-secondary nav-font">General</a>
+
+            <a href="" class="btn btn-primary nav-font">Pricing</a>
+          </div>
+
+          <div class="about-btns-left">
+            <a href="" class="btn btn-primary nav-font">Features</a>
+
+            <a href="" class="btn btn-primary nav-font">Intergrations</a>
+          </div>
+        </div>
+
+        <div class="about-description center-el">
+          <div class="about-description-box">
+            <div class="description-container">
+              <div class="description-items">
+                <img src="img/Note.png" />
+
+                <h2 class="normal-font semi-bold">What is Noteflow?</h2>
+              </div>
+
+              <img src="img/Arrow-up.svg" />
+            </div>
+
+            <p class="description-text normal-font light-bold medium-bottom">
+              NoteFlow is an AI-powered note-taking application designed to help
+              individuals and teams organize, manage, and retrieve notes
+              effortlessly.
+            </p>
+
+            <div class="description-container medium-bottom">
+              <div class="description-items">
+                <img src="img/Magic-Pen.svg" />
+
+                <h2 class="normal-font semi-bold">
+                  How does Noteflow use Ai to enhance note-taking?
+                </h2>
+              </div>
+
+              <img src="img/Arrow-down.svg" />
+            </div>
+
+            <div class="description-container medium-bottom">
+              <div class="description-items">
+                <img src="img/Profile-2-users.svg" />
+
+                <h2 class="normal-font semi-bold">
+                  Can Noteflow be used for team collaboration?
+                </h2>
+              </div>
+
+              <img src="img/Arrow-down.svg" />
+            </div>
+
+            <div class="description-container medium-bottom">
+              <div class="description-items">
+                <img src="img/Cloud Add.svg" />
+
+                <h2 class="normal-font semi-bold">
+                  Can i acess Noteflow on multiple devices?
+                </h2>
+              </div>
+
+              <img src="img/Arrow-down.svg" />
+            </div>
+
+            <div class="description-container medium-bottom">
+              <div class="description-items">
+                <img src="img/security safe.png" />
+
+                <h2 class="normal-font semi-bold">
+                  Is my data secure secure with Noteflow
+                </h2>
+              </div>
+
+              <img src="img/Arrow-down.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials" id="testimonial">
+        <div class="testimonials-text center-txt center-el">
+          <a href="" class="btn-medium btn-secondary nav-font">Testimonials</a>
+
+          <h1 class="small-top large-heading">
+            What our AI-powered notetakers have to say
+          </h1>
+
+          <p class="normal-font light-bold">
+            NoteFlow has helped 1000’s supercharge their productivity with
+            cutting edge AI note taking tools
+          </p>
+        </div>
+
+        <!--- TESTIMONIALS-->
+
+        <div class="testimonials-description">
+          <!--- LEFT TESTIMONIAL-->
+
+          <div class="testimonials-description-left">
+            <div class="testimony small-bottom">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  NoteFlow has completely transformed the way I manage my work
+                  notes. The AI-powered organization feature makes it so easy to
+                  find what I need, even weeks after the fact.
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-2.png" />
+
+                  <div>
+                    <h3 class="normal-font">Emily Thompson</h3>
+                    <small class="medium-font light-bold">
+                      Senior MArketting Manager
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimony">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  The smart organization of my notes is impressive. I used to
+                  waste time searching for information, but now NoteFlow does
+                  the heavy lifting.
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-7.png" />
+
+                  <div>
+                    <h3 class="normal-font">Jonathan Moore</h3>
+                    <small class="medium-font light-bold">
+                      Software Engineer
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--- MIDDLE TESTIMONIAL-->
+
+          <div class="testiomonials-description-middle">
+            <div class="testimony small-bottom">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  As a designer, I need a tool that helps me keep track of
+                  brainstorming sessions and project notes. NoteFlow’s
+                  voice-to-text transcription is a game-changer, allowing me to
+                  capture ideas while on the go. It has boosted my productivity
+                  tenfold!
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-6.png" />
+
+                  <div>
+                    <h3 class="normal-font">Emily Thompson</h3>
+                    <small class="medium-font light-bold">
+                      Senior MArketting Manager
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimony" id="show">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  NoteFlow has completely transformed the way I manage my work
+                  notes. The AI-powered organization feature makes it so easy to
+                  find what I need, even weeks after the fact.
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-1.png" />
+
+                  <div>
+                    <h3 class="normal-font">Rachel Foster</h3>
+                    <small class="medium-font light-bold">
+                      Project Manager
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--- RIGHT TESTIMONIAL-->
+
+          <div class="testiomonials-description-right">
+            <div class="testimony small-bottom">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  I love how NoteFlow integrates with tools like Google Drive
+                  and Slack. It makes collaboration with my team so much
+                  smoother. The contextual reminders have helped me stay on top
+                  of critical deadlines.
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-4.png" />
+
+                  <div>
+                    <h3 class="normal-font">Sarah Lee</h3>
+                    <small class="medium-font light-bold">
+                      Business Analyst
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimony">
+              <div class="testimonials-box">
+                <div class="rate">
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-1.png" />
+                  <img src="img/star-2.png" />
+                </div>
+
+                <p class="top-bit big-bottom nav-font light-bold">
+                  NoteFlow has completely transformed the way I manage my work
+                  notes. The AI-powered organization feature makes it so easy to
+                  find what I need, even weeks after the fact.
+                </p>
+
+                <div class="person-box">
+                  <img src="img/headshot-3.png" />
+
+                  <div>
+                    <h3 class="normal-font">Daniel harris</h3>
+                    <small class="medium-font light-bold"> Entrepreneur </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-btn center-txt">
+          <a href="testimonial.html#more" class="btn btn-primary nav-font">
+            Show more &nbsp;
+            <i class="ri-arrow-down-wide-fill"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <div class="header-logo">
+          <div class="header-logo-image">
+            <span class="vector v1"></span>
+            <span class="vector v2"></span>
+            <span class="vector v3"></span>
+            <span class="vector v4"></span>
+          </div>
+
+          <h1 class="bold normal-font">Noteflow</h1>
+        </div>
+      </div>
+
+      <div class="footer-items">
+        <div class="footer-list">
+          <h2 class="normal-font">Home</h2>
+          <ul class="top-bit">
+            <li><a href="" class="nav-font">FAQ</a></li>
+            <li><a href="" class="nav-font">Features</a></li>
+            <li><a href="" class="nav-font">Companies</a></li>
+            <li><a href="" class="nav-font">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h2 class="normal-font">Pricing</h2>
+          <ul class="top-bit">
+            <li><a href="" class="nav-font">Plans</a></li>
+            <li><a href="" class="nav-font">Billing</a></li>
+            <li><a href="" class="nav-font">Free Trial</a></li>
+            <li><a href="" class="nav-font">Refund</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h2 class="normal-font">About</h2>
+          <ul class="top-bit">
+            <li><a href="" class="nav-font">Careers</a></li>
+            <li><a href="" class="nav-font">Our Story</a></li>
+            <li><a href="" class="nav-font">Contact</a></li>
+            <li><a href="" class="nav-font">Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <h2 class="normal-font">Community</h2>
+
+          <ul class="top-bit">
+            <li><a href="" class="nav-font">Forum</a></li>
+            <li><a href="" class="nav-font">Stories</a></li>
+            <li><a href="" class="nav-font">Blog</a></li>
+            <li><a href="" class="nav-font">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>

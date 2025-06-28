@@ -1,0 +1,37 @@
+.sponsor {
+  // padding: 11.2rem 10rem;
+  @include primary-theme;
+  @include Sectpad;
+
+  @include respond(phone) {
+    @include mobile-pad;
+  }
+
+  &-image {
+    @include respond(phone) {
+      display: flex;
+      width: 100%;
+       gap: 7.4rem;
+      justify-content: center;
+    }
+    &-dept {
+      display: flex;
+      justify-content: space-between;
+
+      @include respond(phone) {
+        flex-direction: column;
+        gap: 7.4rem;
+        height: 100%;
+      }
+
+      & > img {
+        width: 16rem;
+        height: 4rem;
+
+        @include respond(phone){
+          width: 100%;
+        } 
+      }
+    }
+  }
+}

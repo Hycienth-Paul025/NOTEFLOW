@@ -1,0 +1,22 @@
+.btn {
+  padding: 1.6rem 3.2rem;
+  border-radius: 5rem;
+  border: none;
+
+  &-primary {
+    color: inherit;
+    border: 0.2rem solid $color-text;
+  }
+
+  &-secondary {
+    background: $color-primary;
+    color: $color-primary-light;
+    box-shadow: 0px 0px 25px 0px $color-shadow;
+    
+  }
+}
+
+.btn-medium {
+  padding: 0.8rem 1.6rem;
+  border-radius: 5rem;
+}

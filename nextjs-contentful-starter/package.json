@@ -1,0 +1,19 @@
+{
+  "name": "noteflow-project",
+  "version": "1.0.0",
+  "description": "my first sass project",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "styles"
+  ],
+  "author": "Hycienth Paul",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

@@ -1,0 +1,66 @@
+.organization {
+  @include Sectpad;
+  @include secondary-thene;
+
+  @include respond(phone) {
+    @include mobile-pad;
+  }
+
+  & h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  & .charge {
+    color: $color-primary;
+  }
+
+  &-container {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    padding-top: 11.2rem;
+    margin-bottom: 8rem;
+
+    @include respond(phone) {
+      flex-direction: column-reverse;
+    }
+
+    &.reminder {
+      @include respond(phone) {
+        flex-direction: column;
+      }
+    }
+
+    /*  &:not(:last-child){
+        } */
+  }
+
+  &-image {
+    width: 100%;
+
+    & img {
+      width: 60.8rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
+    }
+  }
+
+  &-desciption {
+    color: #c7f7f8;
+  }
+
+  &-contextual-image {
+    width: 100%;
+ 
+    & img {
+      width: 54.4rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
+    }
+  }
+}
