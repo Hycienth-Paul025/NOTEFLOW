@@ -1,0 +1,57 @@
+.heading {
+  &-container {
+    display: flex;
+    gap: 3rem;
+    @include Hpad;
+   @include secondary-thene;
+
+@include respond(phone){
+  flex-direction: column;
+@include mobile-pad;
+}
+
+  }
+
+  &-image {
+    & .img-heading {
+      width: 46rem;
+
+@include respond(phone){
+  width: 100%;
+}
+
+    }
+  }
+
+  &-trust {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    padding-left: 10rem;
+    background: $color-primary-dark;
+
+
+    @include respond(phone){
+      flex-direction: column;
+      padding-left: 2.4rem;
+      align-items: normal;
+    }
+
+    &-image {
+      display: inline-block;
+
+      @include respond(phone){
+        display: block;
+      }
+
+      & > img {
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 5rem;
+        border: .2rem solid $color-text;
+         margin-left: -1.5rem;
+      }
+
+    }
+  }
+}

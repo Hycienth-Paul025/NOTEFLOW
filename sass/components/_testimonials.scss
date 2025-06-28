@@ -1,0 +1,69 @@
+.testimonials {
+  @include secondary-thene;
+  @include Sectpad;
+
+  @include respond(phone) {
+    @include mobile-pad;
+  }
+
+  &-text {
+    text-align: center;
+    width: 70%;
+
+    & h1 {
+      align-self: center;
+      margin: 0 auto;
+
+     
+    }
+
+    & p {
+      width: 75%;
+      margin: 0 auto;
+    }
+  }
+
+  &-description {
+    display: flex;
+    justify-self: center;
+    gap: 2.4rem;
+    padding: 8rem 0;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    & .testimony {
+      background: $color-primary-light;
+      padding: 4rem 3.2rem;
+      border-radius: 1rem;
+      width: 36.7rem;
+
+      @include respond(phone) {
+        width: 40rem;
+      }
+    }
+  }
+
+  &-box {
+    & .rate {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    & .person-box {
+      display: flex;
+      align-items: center;
+      gap: 2.4rem;
+
+      & img {
+        width: 7.2rem;
+        border-radius: 5rem;
+      }
+
+      & h3 {
+        color: $color-primary;
+      }
+    }
+  }
+}

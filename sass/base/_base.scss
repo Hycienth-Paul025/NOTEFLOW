@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+}
+
+body {
+  @include primary-theme;
+ 
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}

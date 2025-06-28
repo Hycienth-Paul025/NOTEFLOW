@@ -1,0 +1,90 @@
+@mixin Hpad {
+  padding: 15rem 10rem;
+}
+
+@mixin Sectpad {
+  padding: 12.8rem 10rem;
+}
+
+@mixin mobile-pad {
+  padding: 9.6rem 2.4rem;
+}
+
+@mixin Sidepad {
+  padding-inline: 10rem;
+}
+
+@mixin primary-theme {
+  background: linear-gradient(
+    180deg,
+    $color-primary-dark 0%,
+    $color-primary-light 100%
+  );
+}
+
+@mixin secondary-thene {
+  background: linear-gradient(
+    0deg,
+    $color-primary-dark 0%,
+    $color-primary-light 100%
+  );
+}
+
+@mixin close-btn {
+  cursor: pointer;
+  color: inherit;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 0.2rem solid $color-text;
+}
+
+//MEDIA QUERY MANAGEMENT
+
+/* 
+0 - 600PX : Mobile phone
+
+600 - 900px : Tablet portrait mode
+ 
+900 - 1200px : Tablet Landscape mode
+
+( 1200px - 1800px ) is where our normal styles apply
+
+1800px + :  Big Desktop Screen
+
+ 
+$breakpoint arguement choices:
+
+-phone
+- Tablet
+- tab-port
+-tab-land
+-big-desktop
+
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  } // 600px
+
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  } // 900px
+
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  } // 1200
+
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  } // 1800
+}

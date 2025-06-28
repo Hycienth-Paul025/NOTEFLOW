@@ -1,0 +1,65 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  justify-content: space-between;
+
+  @include respond(phone) {
+    //  display: none;
+    justify-content: center;
+    background: $color-primary-dark;
+    width: 60%;
+    height: 95vh;
+    border-radius: 2rem;
+    flex-direction: column;
+    align-items: normal;
+    padding: 1.2rem;
+    margin: 2.4rem;
+    position: fixed;
+    top: 2rem;
+    right: -100%;
+    z-index: 6;
+    box-shadow: 0 5px 2rem $color-primary-dark;
+    transition: .4s ease;
+  }
+
+  &-close-btn {
+    @include close-btn;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      width: fit-content;
+    }
+  }
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &-link {
+    color: inherit;
+  }
+
+  // S I G N   U P  D E P A R T M E N T
+
+  &-signup {
+    display: flex;
+    gap: 1.2rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+}
+
+.show-nav{
+  right: 0;
+}

@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10rem 0;
+  @include primary-theme;
+
+  @include respond(phone) {
+    padding: 1.5rem 5rem;
+    top: 0;
+    position: fixed;
+    // z-index: 6;
+  }
+
+  &-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    gap: 1.2rem;
+
+    &-image {
+      display: block;
+
+      & > .vector {
+        height: 0.5rem;
+        background: $color-primary;
+        border-radius: 0.3rem;
+
+        &:not(:last-child) {
+          margin-bottom: 0.2rem;
+        }
+      }
+
+      & .v1 {
+        display: block;
+        width: 1.3rem;
+        margin-left: 1.3rem;
+      }
+
+      & .v2 {
+        display: block;
+        width: 2.3rem;
+        margin-left: 0.8rem;
+      }
+
+      & .v3 {
+        display: block;
+        width: 3.3rem;
+      }
+
+      & .v4 {
+        display: block;
+        width: 1.85rem;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  & .app {
+    font-size: 2.5rem;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      margin-left: 50rem;
+    }
+  }
+
+  &-navigation {
+    @include respond(phone) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 130vh;
+      width: 100vw;
+      backdrop-filter: blur(1rem);
+      visibility: hidden;
+      transition: .2s ease;
+    }
+  }
+}
+
+.blur-effect {
+  visibility: visible;
+}
