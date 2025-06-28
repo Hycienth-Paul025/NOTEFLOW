@@ -25,16 +25,25 @@
     @include respond(phone) {
       flex-direction: column;
       gap: 1.6rem;
+     
     }
 
     &-right {
       display: flex;
       gap: 1.2rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
     }
 
     &-left {
       display: flex;
       gap: 1.2rem;
+
+      @include respond(phone){
+        width: 100%;
+      }
     }
   }
 

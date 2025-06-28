@@ -38,14 +38,16 @@
       padding: 4rem 3.2rem;
       border-radius: 1rem;
       width: 36.7rem;
+      
 
-      @include respond(phone) {
-        width: 40rem;
+      @include respond(phone){
+        width: 100%;
       }
     }
   }
 
   &-box {
+    
     & .rate {
       display: flex;
       gap: 0.4rem;

@@ -174,9 +174,19 @@ body {
   display: flex;
   gap: 1.2rem;
 }
+@media (max-width: 37.5em) {
+  .about-btns-right {
+    width: 100%;
+  }
+}
 .about-btns-left {
   display: flex;
   gap: 1.2rem;
+}
+@media (max-width: 37.5em) {
+  .about-btns-left {
+    width: 100%;
+  }
 }
 .about-description {
   width: 82.6rem;
@@ -373,6 +383,11 @@ body {
   width: 16rem;
   height: 4rem;
 }
+@media (max-width: 37.5em) {
+  .sponsor-image-dept > img {
+    width: 100%;
+  }
+}
 
 .testimonials {
   background: linear-gradient(0deg, #061212 0%, #0e2e2e 100%);
@@ -414,7 +429,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .testimonials-description .testimony {
-    width: 40rem;
+    width: 100%;
   }
 }
 .testimonials-box .rate {
