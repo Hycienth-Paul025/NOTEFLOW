@@ -12,11 +12,12 @@
       display: flex;
       width: 100%;
       justify-content: space-between;
+      justify-items: center;
     }
 
     &-dept {
       display: flex;
-      justify-content: space-between;
+      gap: 1rem;
 
       @include respond(phone) {
         flex-direction: column;
@@ -30,7 +31,9 @@
         height: 4rem;
 
         @include respond(phone) {
-          width: 100%;
+          width: 80%;
+          
+          
         }
       }
     }

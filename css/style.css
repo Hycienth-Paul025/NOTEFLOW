@@ -374,11 +374,12 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    justify-items: center;
   }
 }
 .sponsor-image-dept {
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
 }
 @media (max-width: 37.5em) {
   .sponsor-image-dept {
@@ -393,7 +394,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .sponsor-image-dept > img {
-    width: 100%;
+    width: 80%;
   }
 }
 
