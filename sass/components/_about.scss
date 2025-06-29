@@ -13,8 +13,10 @@
     }
   }
 
-  & p {
-    display: none;
+  & .fact{
+    @include respond(phone){
+      display: none;
+    }
   }
 
   &-btns {
@@ -79,6 +81,10 @@
 
       & .description-text {
         padding-inline: 8rem;
+
+        @include respond(phone){
+          padding-inline: 0;
+        }
       }
     }
   }

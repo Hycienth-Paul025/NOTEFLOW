@@ -11,9 +11,9 @@
     @include respond(phone) {
       display: flex;
       width: 100%;
-       gap: 7.4rem;
-      justify-content: center;
+      justify-content: space-between;
     }
+
     &-dept {
       display: flex;
       justify-content: space-between;
@@ -23,14 +23,15 @@
         gap: 7.4rem;
         height: 100%;
       }
+      
 
       & > img {
         width: 16rem;
         height: 4rem;
 
-        @include respond(phone){
+        @include respond(phone) {
           width: 100%;
-        } 
+        }
       }
     }
   }

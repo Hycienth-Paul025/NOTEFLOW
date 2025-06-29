@@ -1,4 +1,4 @@
-/* 
+/*  
 0 - 600PX : Mobile phone
 
 600 - 900px : Tablet portrait mode
@@ -156,8 +156,10 @@ body {
     text-align: left;
   }
 }
-.about p {
-  display: none;
+@media (max-width: 37.5em) {
+  .about .fact {
+    display: none;
+  }
 }
 .about-btns {
   display: flex;
@@ -218,6 +220,11 @@ body {
 }
 .about-description-box .description-text {
   padding-inline: 8rem;
+}
+@media (max-width: 37.5em) {
+  .about-description-box .description-text {
+    padding-inline: 0;
+  }
 }
 
 .btn {
@@ -325,6 +332,11 @@ body {
     flex-direction: column;
   }
 }
+@media (max-width: 37.5em) {
+  .organization-container h2 {
+    text-align: left;
+  }
+}
 .organization-image {
   width: 100%;
 }
@@ -335,9 +347,6 @@ body {
   .organization-image img {
     width: 100%;
   }
-}
-.organization-desciption {
-  color: #c7f7f8;
 }
 .organization-contextual-image {
   width: 100%;
@@ -364,8 +373,7 @@ body {
   .sponsor-image {
     display: flex;
     width: 100%;
-    gap: 7.4rem;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .sponsor-image-dept {
@@ -402,6 +410,11 @@ body {
   text-align: center;
   width: 70%;
 }
+@media (max-width: 37.5em) {
+  .testimonials-text {
+    width: 100%;
+  }
+}
 .testimonials-text h1 {
   align-self: center;
   margin: 0 auto;
@@ -409,6 +422,11 @@ body {
 .testimonials-text p {
   width: 75%;
   margin: 0 auto;
+}
+@media (max-width: 37.5em) {
+  .testimonials-text p {
+    width: 100%;
+  }
 }
 .testimonials-description {
   display: flex;
