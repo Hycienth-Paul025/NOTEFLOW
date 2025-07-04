@@ -369,6 +369,9 @@ body {
     padding: 9.6rem 2.4rem;
   }
 }
+.sponsor-image {
+  display: block;
+}
 @media (max-width: 37.5em) {
   .sponsor-image {
     display: flex;
@@ -379,7 +382,7 @@ body {
 }
 .sponsor-image-dept {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
 }
 @media (max-width: 37.5em) {
   .sponsor-image-dept {
