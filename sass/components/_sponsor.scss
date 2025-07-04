@@ -7,7 +7,7 @@
     @include mobile-pad;
   }
 
-  &-image {
+  &-image { 
     display: block;
     @include respond(phone) {
       display: flex;

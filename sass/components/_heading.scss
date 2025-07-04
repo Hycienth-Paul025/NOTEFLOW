@@ -1,7 +1,9 @@
 .heading {
   &-container {
     display: flex;
-    gap: 3rem;
+ justify-content: space-between;
+  
+
     @include Hpad;
    @include secondary-thene;
 
@@ -13,11 +15,15 @@
   }
 
   &-image {
+    margin-left: auto;
     & .img-heading {
-      width: 46rem;
+      width: 50rem;
+      height: 47.9rem;
+    
 
 @include respond(phone){
   width: 90%;
+  height: auto;
 }
 
     }
