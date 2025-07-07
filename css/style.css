@@ -140,11 +140,6 @@ body {
 .medium-font {
   font-size: 1.5rem;
 }
-@media (max-width: 37.5em) {
-  .medium-font {
-    font-size: 1.2rem;
-  }
-}
 
 .about {
   background: linear-gradient(180deg, #061212 0%, #0e2e2e 100%);
