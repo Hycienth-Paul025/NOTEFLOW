@@ -17,6 +17,9 @@ body {
   font-weight: 300;
 }
 
+.opacity{
+  opacity: .8;
+}
 
 
 .large-heading {
@@ -27,6 +30,7 @@ body {
 
   @include respond(phone){
     font-size: 4rem;
+    line-height: 5rem;
   }
 }
  
@@ -38,7 +42,9 @@ body {
   text-transform: capitalize;
 
    @include respond(phone){
-    font-size: 3.8rem;
+    font-size: 3.5rem;
+    line-height: 3.4rem; 
+  
   }
 }
 
@@ -77,10 +83,9 @@ body {
 }
 
 .medium-font {
-  font-size: 1.6rem;
-  line-height: 3.2rem;
+  font-size: 1.5rem;
 
    @include respond(phone){
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }

@@ -1,7 +1,7 @@
 .about {
   @include primary-theme;
   margin: 0 auto;
-  padding: 0 0 12.8rem;
+  padding: 0 0 7.8rem;
 
   @include respond(phone) {
     @include mobile-pad;
@@ -13,10 +13,14 @@
     }
   }
 
-  & .fact{
-    @include respond(phone){
+  & .fact {
+    @include respond(phone) {
       display: none;
     }
+  }
+
+  &-fact {
+    border-bottom: 0.1rem solid;
   }
 
   &-btns {
@@ -27,14 +31,13 @@
     @include respond(phone) {
       flex-direction: column;
       gap: 1.6rem;
-     
     }
 
     &-right {
       display: flex;
       gap: 1.2rem;
 
-      @include respond(phone){
+      @include respond(phone) {
         width: 100%;
       }
     }
@@ -43,30 +46,37 @@
       display: flex;
       gap: 1.2rem;
 
-      @include respond(phone){
+      @include respond(phone) {
         width: 100%;
       }
-    } 
+    }
   }
 
   &-description {
     width: 82.6rem;
-    @include respond(phone){
+
+    @include respond(phone) {
       width: 100%;
     }
 
     &-box {
+      
+
+
       & .description-container {
         display: flex;
         justify-content: space-between;
         
-
+          &:not(:last-child){
+          padding-bottom: 1.6rem;
+          }
 
         & .description-items {
           display: flex;
           gap: 2.2rem;
           align-items: center;
-          padding-bottom: 1.6rem;
+
+        
 
           @include respond(phone) {
             width: 70%;
@@ -82,7 +92,7 @@
       & .description-text {
         padding-inline: 8rem;
 
-        @include respond(phone){
+        @include respond(phone) {
           padding-inline: 0;
         }
       }

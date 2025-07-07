@@ -7,7 +7,7 @@
     @include mobile-pad;
   }
 
-  &-image { 
+  &-image {
     display: block;
     @include respond(phone) {
       display: flex;
@@ -23,9 +23,8 @@
       @include respond(phone) {
         flex-direction: column;
         gap: 7.4rem;
-        height: 100%; 
+        height: 100%;
       }
-      
 
       & > img {
         width: 16rem;
@@ -33,8 +32,6 @@
 
         @include respond(phone) {
           width: 80%;
-          
-          
         }
       }
     }

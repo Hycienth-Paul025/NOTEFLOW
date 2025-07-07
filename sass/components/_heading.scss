@@ -1,31 +1,30 @@
 .heading {
+  @include secondary-thene;
+
+  @include respond(phone) {
+    @include mobile-pad;
+  }
+
   &-container {
     display: flex;
- justify-content: space-between;
-  
-
+    justify-content: space-between;
+    column-gap: 2rem;
     @include Hpad;
-   @include secondary-thene;
 
-@include respond(phone){
-  flex-direction: column;
-@include mobile-pad;
-} 
-
+    @include respond(phone) {
+      flex-direction: column;
+      @include mobile-pad;
+    }
   }
 
   &-image {
     margin-left: auto;
     & .img-heading {
-      width: 50rem;
-      height: 47.9rem;
-    
-
-@include respond(phone){
-  width: 90%;
-  height: auto;
-}
-
+      width: 49rem;
+      @include respond(phone) {
+        width: 90%;
+        height: auto;
+      }
     }
   }
 
@@ -34,19 +33,21 @@
     gap: 1.6rem;
     align-items: center;
     padding-left: 10rem;
-    background: $color-primary-dark;
-
-
-    @include respond(phone){
+    @include respond(phone) {
       flex-direction: column;
       padding-left: 2.4rem;
       align-items: normal;
     }
 
+    &-text {
+      opacity: 0.8;
+      //font-weight: 300;
+    }
+
     &-image {
       display: inline-block;
 
-      @include respond(phone){
+      @include respond(phone) {
         display: block;
       }
 
@@ -54,10 +55,9 @@
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 5rem;
-        border: .2rem solid $color-text;
-         margin-left: -1.5rem;
+        border: 0.2rem solid $color-text;
+        margin-left: -1.5rem;
       }
-
     }
   }
 }

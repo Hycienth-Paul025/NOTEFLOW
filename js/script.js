@@ -39,3 +39,5 @@ modalMode.addEventListener("click", () => {
   navCont.classList.remove("show-nav");
   headNav.classList.remove("blur-effect");
 });
+
+

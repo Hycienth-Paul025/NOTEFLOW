@@ -69,6 +69,10 @@ body {
   font-weight: 300;
 }
 
+.opacity {
+  opacity: 0.8;
+}
+
 .large-heading {
   font-size: 6rem;
   font-weight: 600;
@@ -78,6 +82,7 @@ body {
 @media (max-width: 37.5em) {
   .large-heading {
     font-size: 4rem;
+    line-height: 5rem;
   }
 }
 
@@ -90,7 +95,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .big-heading {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
+    line-height: 3.4rem;
   }
 }
 
@@ -132,19 +138,18 @@ body {
 }
 
 .medium-font {
-  font-size: 1.6rem;
-  line-height: 3.2rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 37.5em) {
   .medium-font {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
 .about {
   background: linear-gradient(180deg, #061212 0%, #0e2e2e 100%);
   margin: 0 auto;
-  padding: 0 0 12.8rem;
+  padding: 0 0 7.8rem;
 }
 @media (max-width: 37.5em) {
   .about {
@@ -160,6 +165,9 @@ body {
   .about .fact {
     display: none;
   }
+}
+.about-fact {
+  border-bottom: 0.1rem solid;
 }
 .about-btns {
   display: flex;
@@ -202,11 +210,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.about-description-box .description-container:not(:last-child) {
+  padding-bottom: 1.6rem;
+}
 .about-description-box .description-container .description-items {
   display: flex;
   gap: 2.2rem;
   align-items: center;
-  padding-bottom: 1.6rem;
 }
 @media (max-width: 37.5em) {
   .about-description-box .description-container .description-items {
@@ -247,11 +257,19 @@ body {
   border-radius: 5rem;
 }
 
+.heading {
+  background: linear-gradient(0deg, #061212 0%, #0e2e2e 100%);
+}
+@media (max-width: 37.5em) {
+  .heading {
+    padding: 9.6rem 2.4rem;
+  }
+}
 .heading-container {
   display: flex;
   justify-content: space-between;
+  column-gap: 2rem;
   padding: 15rem 10rem;
-  background: linear-gradient(0deg, #061212 0%, #0e2e2e 100%);
 }
 @media (max-width: 37.5em) {
   .heading-container {
@@ -263,8 +281,7 @@ body {
   margin-left: auto;
 }
 .heading-image .img-heading {
-  width: 50rem;
-  height: 47.9rem;
+  width: 49rem;
 }
 @media (max-width: 37.5em) {
   .heading-image .img-heading {
@@ -277,7 +294,6 @@ body {
   gap: 1.6rem;
   align-items: center;
   padding-left: 10rem;
-  background: #061212;
 }
 @media (max-width: 37.5em) {
   .heading-trust {
@@ -285,6 +301,9 @@ body {
     padding-left: 2.4rem;
     align-items: normal;
   }
+}
+.heading-trust-text {
+  opacity: 0.8;
 }
 .heading-trust-image {
   display: inline-block;
@@ -305,31 +324,32 @@ body {
 .organization {
   padding: 12.8rem 10rem;
   background: linear-gradient(0deg, #061212 0%, #0e2e2e 100%);
+  /* SAMRT ORGANIZATION */
+  /* CONTEXTUAL REMINDER */
 }
 @media (max-width: 37.5em) {
   .organization {
     padding: 9.6rem 2.4rem;
   }
 }
-.organization h1 {
-  width: 80%;
-  margin: 0 auto;
+@media (max-width: 37.5em) {
+  .organization h1 {
+    text-align: normal;
+  }
 }
 .organization .charge {
   color: #44e5e7;
 }
 .organization-container {
   display: flex;
-  gap: 4rem;
   align-items: center;
   padding-top: 11.2rem;
-  margin-bottom: 8rem;
-  /*  &:not(:last-child){
-      } */
 }
 @media (max-width: 37.5em) {
   .organization-container {
     flex-direction: column-reverse;
+    row-gap: 4rem;
+    text-align: normal;
   }
 }
 @media (max-width: 37.5em) {
@@ -337,16 +357,16 @@ body {
     flex-direction: column;
   }
 }
+.organization-image {
+  margin-right: 10rem;
+}
 @media (max-width: 37.5em) {
-  .organization-container h2 {
-    text-align: left;
+  .organization-image {
+    margin-right: 0;
   }
 }
-.organization-image {
-  width: 100%;
-}
 .organization-image img {
-  width: 60.8rem;
+  width: 50rem;
 }
 @media (max-width: 37.5em) {
   .organization-image img {
@@ -355,9 +375,15 @@ body {
 }
 .organization-contextual-image {
   width: 100%;
+  margin-left: 10rem;
+}
+@media (max-width: 37.5em) {
+  .organization-contextual-image {
+    margin-left: 0;
+  }
 }
 .organization-contextual-image img {
-  width: 54.4rem;
+  width: 50rem;
 }
 @media (max-width: 37.5em) {
   .organization-contextual-image img {
@@ -416,6 +442,7 @@ body {
   }
 }
 .testimonials-text {
+  display: block;
   text-align: center;
   width: 70%;
 }
@@ -424,9 +451,23 @@ body {
     width: 100%;
   }
 }
+.testimonials-text a {
+  display: flex;
+  justify-self: center;
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 37.5em) {
+  .testimonials-text a {
+    margin-bottom: 3.2rem;
+  }
+}
 .testimonials-text h1 {
-  align-self: center;
-  margin: 0 auto;
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 37.5em) {
+  .testimonials-text h1 {
+    margin-bottom: 1.6rem;
+  }
 }
 .testimonials-text p {
   width: 75%;
@@ -462,6 +503,9 @@ body {
 .testimonials-box .rate {
   display: flex;
   gap: 0.4rem;
+}
+.testimonials-box p, .testimonials-box small {
+  opacity: 0.8;
 }
 .testimonials-box .person-box {
   display: flex;
@@ -527,6 +571,7 @@ body {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 6;
   }
 }
 .header-logo {

@@ -6,9 +6,10 @@
     @include mobile-pad;
   }
 
-  & h1 {
-    width: 80%;
-    margin: 0 auto;
+  & h1{
+    @include respond(phone){
+      text-align: normal;
+    }
   }
 
   & .charge {
@@ -17,13 +18,13 @@
 
   &-container {
     display: flex;
-    gap: 4rem;
     align-items: center;
     padding-top: 11.2rem;
-    margin-bottom: 8rem;
 
     @include respond(phone) {
       flex-direction: column-reverse;
+      row-gap: 4rem;
+      text-align: normal;
     }
 
     &.reminder {
@@ -31,22 +32,19 @@
         flex-direction: column;
       }
     }
-
-    & h2 {
-      @include respond(phone) {
-        text-align: left;
-      }
-    }
-
-    /*  &:not(:last-child){
-        } */
   }
 
+  /* SAMRT ORGANIZATION */
+
   &-image {
-    width: 100%;
+    margin-right: 10rem;
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
 
     & img {
-      width: 60.8rem;
+      width: 50rem;
 
       @include respond(phone) {
         width: 100%;
@@ -54,11 +52,18 @@
     }
   }
 
+  /* CONTEXTUAL REMINDER */
+
   &-contextual-image {
     width: 100%;
+    margin-left: 10rem;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
 
     & img {
-      width: 54.4rem;
+      width: 50rem;
 
       @include respond(phone) {
         width: 100%;
