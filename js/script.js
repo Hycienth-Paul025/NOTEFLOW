@@ -9,7 +9,6 @@ modalTog.addEventListener("click", (e) => {
 const closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", () => {
   modalBox.classList.remove("open");
-  console.log("clicked");
 });
 
 const navToggle = document.querySelector(".app");
