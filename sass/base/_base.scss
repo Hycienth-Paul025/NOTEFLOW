@@ -17,8 +17,8 @@ html {
 
 body {
   @include primary-theme;
- 
 }
+
 
 a:link,
 a:visited {
@@ -28,4 +28,18 @@ a:visited {
 
 li {
   list-style: none;
+}
+
+::-webkit-scrollbar {
+  background: $color-primary-dark;
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-primary-light;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $color-primary;
 }

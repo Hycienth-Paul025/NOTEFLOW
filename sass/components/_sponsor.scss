@@ -3,12 +3,13 @@
   @include primary-theme;
   @include Sectpad;
 
-  @include respond(phone) {
+  @include respond(tab-land) {
     @include mobile-pad;
   }
 
   &-image {
     display: block;
+
     @include respond(phone) {
       display: flex;
       width: 100%;
@@ -20,9 +21,13 @@
       display: flex;
       justify-content: space-between;
 
+      @include respond(tab-land) {
+        justify-content: space-between;
+      }
+
       @include respond(phone) {
         flex-direction: column;
-        gap: 7.4rem;
+        row-gap: 7.4rem;
         height: 100%;
       }
 

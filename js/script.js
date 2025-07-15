@@ -9,7 +9,6 @@ modalTog.addEventListener("click", (e) => {
 const closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", () => {
   modalBox.classList.remove("open");
-  console.log("clicked");
 });
 
 const navToggle = document.querySelector(".app");
@@ -21,7 +20,7 @@ const modalMode = document.getElementById("modal-toggle");
 navToggle.addEventListener("click", () => {
   navCont.classList.add("show-nav");
   headNav.classList.add("blur-effect");
-}); 
+});
 
 navClose.addEventListener("click", () => {
   console.log("clicked");
@@ -29,15 +28,101 @@ navClose.addEventListener("click", () => {
   headNav.classList.remove("blur-effect");
 });
 
-headNav.addEventListener("click", ()=>{
+headNav.addEventListener("click", () => {
   navCont.classList.remove("show-nav");
   headNav.classList.remove("blur-effect");
-})
-
+});
 
 modalMode.addEventListener("click", () => {
   navCont.classList.remove("show-nav");
   headNav.classList.remove("blur-effect");
 });
 
+// Navigation Links
 
+const navLinkEl = document.querySelectorAll(".nav-link");
+
+navLinkEl.forEach((links) =>
+  links.addEventListener("click", () => {
+    headNav.classList.remove("blur-effect");
+    navCont.classList.remove("show-nav");
+  })
+);
+
+/// FILTERATION
+
+const aboutBtns = document.querySelectorAll(".about-btn");
+const aboutSect = document.querySelectorAll(".description-section");
+
+//when we click we call the filterable Function
+
+function filterable(e) {
+  document.querySelector(".active").classList.remove("active");
+  e.target.classList.add("active");
+  e.preventDefault();
+
+  // filter each section to thier button
+
+//first way of filtering 
+
+  let dataFilter = this.getAttribute("data-name")
+
+
+aboutSect.forEach(section => {
+  section.classList.add("hide")
+
+  if(section.getAttribute("data-item") === dataFilter || dataFilter == "all"){
+section.classList.remove("hide")
+  }
+
+})
+
+
+// second way of filtering 
+  
+  /* for( let i = 0; i < aboutSect.length; i++)
+  {
+aboutSect[i].classList.add("hide")
+
+
+
+if(aboutSect[i].getAttribute("data-item") == dataFilter || dataFilter == "all"){
+aboutSect[i].classList.remove("hide")
+
+}
+  } */
+
+
+
+    }
+
+aboutBtns.forEach((btns) => btns.addEventListener("click", filterable)); 
+
+
+
+
+
+
+// ACCORDION
+
+const accordionItem = document.querySelectorAll(".description-container");
+
+accordionItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    const expand = this.getAttribute("aria-expanded") == "true";
+
+    //collapse all item first
+
+    /* accordionItem.forEach((i) => i.setAttribute("aria-expanded", "false"));
+     */
+
+    for (i = 0; i < accordionItem.length; i++) {
+      accordionItem[i].setAttribute("aria-expanded", "false");
+    }
+
+    // if not already expanded, expand this one
+    if (!expand) {
+      this.setAttribute("aria-expanded", "true");
+    }
+  });
+});

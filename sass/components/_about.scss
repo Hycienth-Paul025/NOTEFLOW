@@ -26,16 +26,31 @@
   &-btns {
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    column-gap: 1.2rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 0.8rem;
+    }
 
     @include respond(phone) {
       flex-direction: column;
-      gap: 1.6rem;
+      row-gap: 1.6rem;
     }
+
+     .active {
+        background: $color-primary;
+        color: $color-primary-dark;
+        border: none;
+        box-shadow: 0px 0px 25px 0px $color-shadow;
+      }
+
+
 
     &-right {
       display: flex;
-      gap: 1.2rem;
+      column-gap: 1.2rem;
+
+     
 
       @include respond(phone) {
         width: 100%;
@@ -44,7 +59,7 @@
 
     &-left {
       display: flex;
-      gap: 1.2rem;
+      column-gap: 1.2rem;
 
       @include respond(phone) {
         width: 100%;
@@ -55,28 +70,33 @@
   &-description {
     width: 82.6rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       width: 100%;
     }
 
     &-box {
-      
+
+    
 
 
       & .description-container {
         display: flex;
         justify-content: space-between;
-        
-          &:not(:last-child){
+        cursor: pointer;
+
+        &:not(:last-child) {
           padding-bottom: 1.6rem;
-          }
+        }
+
+        .description-icon {
+          transition: 0.2s;
+          will-change: transform;
+        }
 
         & .description-items {
           display: flex;
-          gap: 2.2rem;
+          column-gap: 2.2rem;
           align-items: center;
-
-        
 
           @include respond(phone) {
             width: 70%;
@@ -89,13 +109,39 @@
         }
       }
 
+      
+
       & .description-text {
-        padding-inline: 8rem;
+        margin-top: -1rem;
+        height: 0;
+        opacity: 0;
+        padding-inline: 10rem;
+        transition: 200ms linear;
+        will-change: height, opacity;
 
         @include respond(phone) {
           padding-inline: 0;
         }
       }
+
+      & .description-section {
+        & .description-container[aria-expanded="true"] ~ .description-text {
+          height: 12rem;
+          opacity: 1;
+        }
+      }
+
+      & .description-container[aria-expanded="true"] .description-icon {
+        transform: rotate(180deg);
+      }
+
+      & .description-container[aria-expanded="true"] {
+        z-index: 3;
+      }
     }
   }
 }
+
+  .hide{
+        display: none;
+      }

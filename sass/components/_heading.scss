@@ -1,6 +1,7 @@
 .heading {
   @include secondary-thene;
 
+
   @include respond(phone) {
     @include mobile-pad;
   }
@@ -11,20 +12,38 @@
     column-gap: 2rem;
     @include Hpad;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
+      row-gap: 4.8rem;
       @include mobile-pad;
     }
   }
 
   &-image {
     margin-left: auto;
+
+    @include respond(tab-port){
+      margin: 0 auto;
+    }
+
+    @include respond (phone){
+      margin: 0;
+    }
+
     & .img-heading {
       width: 49rem;
       @include respond(phone) {
+        margin: 0 auto;
         width: 90%;
         height: auto;
       }
+    }
+  }
+
+  &-description{
+   
+    @include respond(phone){
+      margin-bottom: 4.8rem;
     }
   }
 

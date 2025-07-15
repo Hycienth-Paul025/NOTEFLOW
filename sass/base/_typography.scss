@@ -28,6 +28,11 @@ body {
   line-height: 7.5rem;
   letter-spacing: -0.3rem;
 
+  @include respond(tab-land){
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+
   @include respond(phone){
     font-size: 4rem;
     line-height: 5rem;

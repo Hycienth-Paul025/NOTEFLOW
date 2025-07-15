@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noteflow</title>
 
+    <!-- Link for Remixicon -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
@@ -36,7 +38,10 @@
       </div>
       <i class="ri-apps-2-line app"></i>
 
+      <!-- </nav> -->
+
       <div class="header-navigation"></div>
+
       <nav class="nav">
         <i class="ri-close-large-fill nav-close-btn"></i>
 
@@ -59,7 +64,6 @@
             >
           </li>
         </ul>
-        <!-- </nav> -->
 
         <div class="nav-signup">
           <a href="" class="btn btn-primary nav-font">login</a>
@@ -212,12 +216,12 @@
           <sapn class="text-shadow charge">Supercharge</sapn> Your Note Taking
         </h1>
 
-        <div class="organization-container">
+        <div class="organization-container smart">
           <div class="organization-image">
             <img src="img/Smart Organization.png" />
           </div>
 
-          <div class="organization-description smart">
+          <div class="organization-description">
             <h2 class="big-heading small-bottom">smart organization</h2>
 
             <p class="light-bold opacity normal-font">
@@ -259,84 +263,145 @@
 
         <div class="about-btns top-bit big-bottom">
           <div class="about-btns-right">
-            <a href="#" class="btn btn-secondary nav-font">General</a>
+            <a
+              href="#"
+              class="about-btn btn btn-primary active nav-font"
+              data-name="all"
+              >General</a
+            >
 
-            <a href="#" class="btn btn-primary nav-font">Pricing</a>
+            <a
+              href="#"
+              class="about-btn btn btn-primary nav-font"
+              data-name="pricing"
+              >Pricing</a
+            >
           </div>
 
           <div class="about-btns-left">
-            <a href="#" class="btn btn-primary nav-font">Features</a>
+            <a
+              href="#"
+              class="about-btn btn btn-primary nav-font"
+              data-name="features"
+              >Features</a
+            >
 
-            <a href="#" class="btn btn-primary nav-font">Intergrations</a>
+            <a
+              href="#"
+              class="about-btn btn btn-primary nav-font"
+              data-name="intergrations"
+              >Intergrations</a
+            >
           </div>
         </div>
 
         <div class="about-description center-el">
           <div class="about-description-box">
-            <div class="description-container">
-              <div class="description-items">
-                <img src="img/Note.png" />
+            <div class="description-section" data-item="features">
+              <div class="description-container" aria-expanded="false">
+                <div class="description-items">
+                  <img src="img/Note.png" />
 
-                <h2 class="normal-font semi-bold">What is Noteflow?</h2>
+                  <h2 class="normal-font semi-bold">What is Noteflow?</h2>
+                </div>
+
+                <img src="img/Arrow down.svg" class="description-icon" />
               </div>
 
-              <img src="img/Arrow up.svg" />
+              <p
+                class="description-text normal-font opacity light-bold medium-bottom"
+              >
+                NoteFlow is an AI-powered note-taking application designed to
+                help individuals and teams organize, manage, and retrieve notes
+                effortlessly.
+              </p>
             </div>
 
-            <p
-              class="description-text normal-font opacity light-bold medium-bottom"
-            >
-              NoteFlow is an AI-powered note-taking application designed to help
-              individuals and teams organize, manage, and retrieve notes
-              effortlessly.
-            </p>
+            <div class="description-section" data-item="features">
+              <div class="description-container" aria-expanded="false">
+                <div class="description-items">
+                  <img src="img/Magic Pen.svg" />
 
-            <div class="description-container medium-bottom">
-              <div class="description-items">
-                <img src="img/Magic Pen.svg" />
+                  <h2 class="normal-font semi-bold">
+                    How does Noteflow use Ai to enhance note-taking?
+                  </h2>
+                </div>
 
-                <h2 class="normal-font semi-bold">
-                  How does Noteflow use Ai to enhance note-taking?
-                </h2>
+                <img src="img/Arrow down.svg" class="description-icon" />
               </div>
-
-              <img src="img/Arrow down.svg" />
+              <p
+                class="description-text normal-font opacity light-bold medium-bottom"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ad deleniti porro facere nostrum fuga repudiandae eaque, saepe
+                facilis commodi!.
+              </p>
             </div>
 
-            <div class="description-container medium-bottom">
-              <div class="description-items">
-                <img src="img/Profile 2 users.svg" />
+            <div class="description-section" data-item="pricing">
+              <div class="description-container" aria-expanded="false">
+                <div class="description-items">
+                  <img src="img/Profile 2 users.svg" />
 
-                <h2 class="normal-font semi-bold">
-                  Can Noteflow be used for team collaboration?
-                </h2>
+                  <h2 class="normal-font semi-bold">
+                    Can Noteflow be used for team collaboration?
+                  </h2>
+                </div>
+
+                <img src="img/Arrow down.svg" class="description-icon" />
               </div>
 
-              <img src="img/Arrow down.svg" />
+              <p
+                class="description-text normal-font opacity light-bold medium-bottom"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ad deleniti porro facere nostrum fuga repudiandae eaque, saepe
+                facilis commodi!.
+              </p>
             </div>
 
-            <div class="description-container medium-bottom">
-              <div class="description-items">
-                <img src="img/Cloud Add.svg" />
+            <div class="description-section" data-item="pricing">
+              <div class="description-container" aria-expanded="false">
+                <div class="description-items">
+                  <img src="img/Cloud Add.svg" />
 
-                <h2 class="normal-font semi-bold">
-                  Can i acess Noteflow on multiple devices?
-                </h2>
+                  <h2 class="normal-font semi-bold">
+                    Can i acess Noteflow on multiple devices?
+                  </h2>
+                </div>
+
+                <img src="img/Arrow down.svg" class="description-icon" />
               </div>
 
-              <img src="img/Arrow down.svg" />
+              <p
+                class="description-text normal-font opacity light-bold medium-bottom"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ad deleniti porro facere nostrum fuga repudiandae eaque, saepe
+                facilis commodi!.
+              </p>
             </div>
 
-            <div class="description-container medium-bottom">
-              <div class="description-items">
-                <img src="img/security safe.png" />
+            <div class="description-section" data-item="intergrations">
+              <div class="description-container" aria-expanded="false">
+                <div class="description-items">
+                  <img src="img/security safe.png" />
 
-                <h2 class="normal-font semi-bold">
-                  Is my data secure secure with Noteflow
-                </h2>
+                  <h2 class="normal-font semi-bold">
+                    Is my data secure secure with Noteflow
+                  </h2>
+                </div>
+
+                <img src="img/Arrow down.svg" class="description-icon" />
               </div>
 
-              <img src="img/Arrow down.svg" />
+              <p
+                class="description-text normal-font opacity light-bold medium-bottom"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                ad deleniti porro facere nostrum fuga repudiandae eaque, saepe
+                facilis commodi!.
+              </p>
             </div>
           </div>
         </div>
@@ -344,10 +409,12 @@
 
       <section class="testimonials" id="testimonial">
         <div class="testimonials-text center-txt center-el">
-          <a href="#" class="btn-medium btn-secondary nav-font">Testimonials </a>
+          <a href="#" class="btn-medium btn-secondary nav-font"
+            >Testimonials
+          </a>
 
-          <h1 class=" large-heading">
-            What our AI-powered  notetakers have to say 
+          <h1 class="large-heading">
+            What our AI-powered notetakers have to say
           </h1>
 
           <p class="normal-font light-bold">
@@ -448,7 +515,7 @@
                   <div>
                     <h3 class="normal-font">Emily Thompson</h3>
                     <small class="medium-font light-bold">
-                     Product Designer
+                      Product Designer
                     </small>
                   </div>
                 </div>

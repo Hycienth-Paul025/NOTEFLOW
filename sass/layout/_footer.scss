@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     @include mobile-pad;
     flex-direction: column;
     justify-content: normal;
