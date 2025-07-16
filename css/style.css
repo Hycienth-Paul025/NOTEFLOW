@@ -276,6 +276,11 @@ body {
   height: 12rem;
   opacity: 1;
 }
+@media (max-width: 37.5em) {
+  .about-description-box .description-section .description-container[aria-expanded=true] ~ .description-text {
+    height: 14rem;
+  }
+}
 .about-description-box .description-container[aria-expanded=true] .description-icon {
   transform: rotate(180deg);
 }

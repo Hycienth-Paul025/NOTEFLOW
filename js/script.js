@@ -1,10 +1,20 @@
 const modalBox = document.getElementById("modal");
-const modalTog = document.getElementById("modal-toggle");
+const modalTog = document.querySelectorAll("#modal-toggle");
 
+modalTog.forEach((tog) => {
+  tog.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalBox.classList.add("open");
+  });
+});
+
+// for Single Signup Button
+
+/* 
 modalTog.addEventListener("click", (e) => {
   e.preventDefault(); // Prevent the default link behavior
   modalBox.classList.add("open");
-});
+}); */
 
 const closeBtn = document.querySelector(".close-btn");
 closeBtn.addEventListener("click", () => {
@@ -49,6 +59,9 @@ navLinkEl.forEach((links) =>
   })
 );
 
+
+
+
 /// FILTERATION
 
 const aboutBtns = document.querySelectorAll(".about-btn");
@@ -63,23 +76,23 @@ function filterable(e) {
 
   // filter each section to thier button
 
-//first way of filtering 
+  //first way of filtering
 
-  let dataFilter = this.getAttribute("data-name")
+  let dataFilter = this.getAttribute("data-name");
 
+  aboutSect.forEach((section) => {
+    section.classList.add("hide");
 
-aboutSect.forEach(section => {
-  section.classList.add("hide")
+    if (
+      section.getAttribute("data-item") === dataFilter ||
+      dataFilter == "all"
+    ) {
+      section.classList.remove("hide");
+    }
+  });
 
-  if(section.getAttribute("data-item") === dataFilter || dataFilter == "all"){
-section.classList.remove("hide")
-  }
+  // second way of filtering
 
-})
-
-
-// second way of filtering 
-  
   /* for( let i = 0; i < aboutSect.length; i++)
   {
 aboutSect[i].classList.add("hide")
@@ -91,14 +104,9 @@ aboutSect[i].classList.remove("hide")
 
 }
   } */
+}
 
-
-
-    }
-
-aboutBtns.forEach((btns) => btns.addEventListener("click", filterable)); 
-
-
+aboutBtns.forEach((btns) => btns.addEventListener("click", filterable));
 
 
 
