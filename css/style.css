@@ -139,7 +139,8 @@ body {
 }
 @media (max-width: 37.5em) {
   .normal-font {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -275,11 +276,6 @@ body {
 .about-description-box .description-section .description-container[aria-expanded=true] ~ .description-text {
   height: 12rem;
   opacity: 1;
-}
-@media (max-width: 37.5em) {
-  .about-description-box .description-section .description-container[aria-expanded=true] ~ .description-text {
-    height: 14rem;
-  }
 }
 .about-description-box .description-container[aria-expanded=true] .description-icon {
   transform: rotate(180deg);
