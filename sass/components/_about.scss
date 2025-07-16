@@ -37,20 +37,16 @@
       row-gap: 1.6rem;
     }
 
-     .active {
-        background: $color-primary;
-        color: $color-primary-dark;
-        border: none;
-        box-shadow: 0px 0px 25px 0px $color-shadow;
-      }
-
-
+    .active {
+      background: $color-primary;
+      color: $color-primary-dark;
+      border: none;
+      box-shadow: 0px 0px 25px 0px $color-shadow;
+    }
 
     &-right {
       display: flex;
       column-gap: 1.2rem;
-
-     
 
       @include respond(phone) {
         width: 100%;
@@ -76,17 +72,24 @@
 
     &-box {
 
-    
+& .description-section{
+  &:not(:last-child) {
+          margin-bottom: 5.6rem;
 
+          @include respond(phone){
+            margin-bottom: 4rem;
+          
+          }
+        }
+
+}
 
       & .description-container {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
 
-        &:not(:last-child) {
-          padding-bottom: 1.6rem;
-        }
+       
 
         .description-icon {
           transition: 0.2s;
@@ -109,7 +112,6 @@
         }
       }
 
-      
 
       & .description-text {
         margin-top: -1rem;
@@ -124,12 +126,11 @@
         }
       }
 
+
       & .description-section {
         & .description-container[aria-expanded="true"] ~ .description-text {
-          height: 12rem;
+          height: 10rem;
           opacity: 1;
-
-         
         }
       }
 
@@ -138,12 +139,12 @@
       }
 
       & .description-container[aria-expanded="true"] {
-        z-index: 3;
+        padding-bottom: 2.6rem;
       }
     }
   }
 }
 
-  .hide{
-        display: none;
-      }
+.hide {
+  display: none;
+}
