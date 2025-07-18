@@ -5,7 +5,7 @@
   @include respond(phone) {
     @include mobile-pad;
   }
-
+ 
   &-container {
     display: flex;
     justify-content: space-between;
