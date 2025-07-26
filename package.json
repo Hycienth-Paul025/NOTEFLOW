@@ -4,7 +4,11 @@
   "description": "my first sass project",
   "main": "index.js",
   "scripts": {
-    "compile:sass":"sass sass/main.scss css/style.css -w"
+    "compile:sass": "sass sass/main.scss css/style.css ",
+      "watch:sass": "sass sass/main.scss css/style.css --watch",
+    "prefix:css": "postcss css/style.css -o css/style.prefixed.css",
+    "compress:css": "postcss css/style.prefixed.css -o css/style.min.css",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "keywords": [
     "sass",
@@ -14,6 +18,11 @@
   "author": "Hycienth Paul",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "sass": "^1.89.2"
   }
 }

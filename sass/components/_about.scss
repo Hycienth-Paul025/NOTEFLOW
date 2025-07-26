@@ -71,25 +71,20 @@
     }
 
     &-box {
-
-& .description-section{
-  &:not(:last-child) {
+      & .description-section {
+        &:not(:last-child) {
           margin-bottom: 5.6rem;
 
-          @include respond(phone){
+          @include respond(phone) {
             margin-bottom: 4rem;
-          
           }
         }
-
-}
+      }
 
       & .description-container {
         display: flex;
         justify-content: space-between;
         cursor: pointer;
-
-       
 
         .description-icon {
           transition: 0.2s;
@@ -112,7 +107,6 @@
         }
       }
 
-
       & .description-text {
         margin-top: -1rem;
         visibility: hidden;
@@ -127,11 +121,10 @@
         }
       }
 
-
       & .description-section {
         & .description-container[aria-expanded="true"] ~ .description-text {
-         visibility: visible;
-         display: block;
+          visibility: visible;
+          display: block;
           opacity: 1;
         }
       }

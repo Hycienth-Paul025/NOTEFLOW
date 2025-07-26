@@ -5,6 +5,8 @@ modalTog.forEach((tog) => {
   tog.addEventListener("click", (e) => {
     e.preventDefault();
     modalBox.classList.add("open");
+    navCont.classList.remove("show-nav");
+    headNav.classList.remove("blur-effect");
   });
 });
 
@@ -59,9 +61,6 @@ navLinkEl.forEach((links) =>
   })
 );
 
-
-
-
 /// FILTERATION
 
 const aboutBtns = document.querySelectorAll(".about-btn");
@@ -97,8 +96,6 @@ function filterable(e) {
   {
 aboutSect[i].classList.add("hide")
 
-
-
 if(aboutSect[i].getAttribute("data-item") == dataFilter || dataFilter == "all"){
 aboutSect[i].classList.remove("hide")
 
@@ -107,9 +104,6 @@ aboutSect[i].classList.remove("hide")
 }
 
 aboutBtns.forEach((btns) => btns.addEventListener("click", filterable));
-
-
-
 
 // ACCORDION
 

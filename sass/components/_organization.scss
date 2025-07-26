@@ -21,20 +21,20 @@
     align-items: center;
     padding-top: 11.2rem;
 
-    @include respond(tab-port) {
+    @include respond(tab-land) {
       flex-direction: column-reverse;
       row-gap: 4rem;
       text-align: normal;
     }
 
     &.reminder {
-      @include respond(tab-port) {
+      @include respond(tab-land) {
         flex-direction: column;
       }
     }
   }
 
-  /* SAMRT ORGANIZATION */
+  /* SMART ORGANIZATION */
 
   &-image {
     width: 100%;
@@ -48,9 +48,12 @@
       width: 56rem;
       height: 70.8rem;
 
-      @include respond(phone) {
-        width: 100%;
+      @include respond(tab-port) {
+        max-width: 100%;
+        height: 100%;
       }
+
+    
     }
   }
 
@@ -68,7 +71,8 @@
       width: 50rem;
 
       @include respond(tab-port) {
-        width: 100%;
+         max-width: 100%;
+        height: 100%;
       }
     }
   }
