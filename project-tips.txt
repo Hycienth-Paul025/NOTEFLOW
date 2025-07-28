@@ -37,3 +37,20 @@ inside  [ postcss.config.js ] paste this ⬇️👇 :
         npm install --save-dev npm-run-all
  then 
  run : npm run build:css
+
+
+
+ 
+
+
+//// WITH THESE SCRIPTS YOUR PREEFIXE GET UPDATED AUTOMATICALLY WHILE MAKING CHANGES
+
+"scripts": {
+  "compile:sass": "sass sass/main.scss css/style.css",
+  "watch:sass": "sass sass/main.scss css/style.css --watch",
+  "prefix:css": "postcss css/style.css -o css/style.prefixed.css",
+  "compress:css": "postcss css/style.prefixed.css -o css/style.min.css",
+  "build:css": "npm-run-all compile:sass prefix:css compress:css",
+  "watch:css": "npm-run-all --parallel watch:sass watch:postcss",
+  "watch:postcss": "postcss css/style.css -o css/style.prefixed.css --watch"
+}
